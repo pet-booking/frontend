@@ -1,0 +1,35 @@
+{
+  "engines": {
+    "node": "8.4.0"
+  },
+  "name": "pet-booking-frontend",
+  "version": "0.0.1",
+  "description": "Pet Booking frontend for TLC Sitters",
+  "main": "webpack.config.js",
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack-dev-server --inline --hot",
+    "test": "jest",
+    "heroku-postbuild": "webpack",
+    "start": "node index.js"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(svg|eof|ttf|woff|woff2|scss|gif)$": "<rootDir>/src/__test__/mock-asset.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pet-booking/frontend.git"
+  },
+  "author": "ronbarrantes@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pet-booking/frontend/issues"
+  },
+  "homepage": "https://github.com/pet-booking/frontend#readme",
+  "devDependencies": {
+    "faker": "^4.1.0",
+    "jest": "^22.0.3"
+  }
+}
