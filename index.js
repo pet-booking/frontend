@@ -1,7 +1,6 @@
-'use strict'
-
 const express = require('express')
-let port = process.env.PORT || 3000
+
+const port = process.env.PORT || 3000
 
 express()
   .use(require('morgan')('common'))
