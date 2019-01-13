@@ -23,6 +23,13 @@
         "SwitchCase": 1
       }
     ],
+    "jsx-a11y/href-no-hash": 0,
+    "jsx-a11y/anchor-has-content": 0,
+    "react/require-extension": 0,
+    "react/jsx-filename-extension": 0,
+    "react/jsx-uses-react": ["error"],
+    "react/jsx-uses-vars": ["error"],
+
     "semi": [
       "error",
       "never"
@@ -31,14 +38,10 @@
   "plugins": [
     "react"
   ],
+  "parser": "babel-eslint",
   "parserOptions": {
     "sourceType": "module",
-    "ecmaFeatures": {
-      "experimentalObjectRestSpread": true,
-      "module": true,
-      "jsx": true
-    }
-  },
+    "parserOptions": { "ecmaVersion": 6 } },
   "env": {
     "es6": true,
     "node": true,
@@ -51,6 +54,8 @@
     "__DEBUG__": false
   },
   "extends": [
-    "eslint:recommended"
+    "eslint:recommended", 
+    "airbnb",
+    "plugin:react/recommended"
   ]
 }
