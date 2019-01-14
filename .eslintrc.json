@@ -10,6 +10,17 @@
         "allowTemplateLiterals": true
       }
     ],
+    "space-in-parens": [
+      "warn",
+      "never"
+    ],
+    "new-cap": [
+      "error",
+      { "capIsNewExceptions": [ "Record" ] }
+    ],
+    "camelcase": [
+      "warn"
+    ],
     "comma-dangle": [
       "error",
       "always-multiline"
