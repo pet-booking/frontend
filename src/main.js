@@ -3,7 +3,7 @@ import './style/main.scss'
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-const App = () => <div><h1>hello</h1></div>
+import App from './components/app'
 
 const container = document.createElement('div')
 container.className = 'root'
