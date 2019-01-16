@@ -5,7 +5,7 @@ import Pet from '../pet'
 import Nav from '../nav'
 import Home from '../home'
 import Profile from '../profile'
-import SignIn from '../signin'
+import LogIn from '../login'
 import SignUp from '../signup'
 import FourOhFour from '../four-oh-four'
 
@@ -18,7 +18,7 @@ const App = () => (
         <Route exact path="/" component={Home} />
         <Route exact path="/pet" component={Pet} />
         <Route exact path="/profile" component={Profile} />
-        <Route exact path="/signin" component={SignIn} />
+        <Route exact path="/login" component={LogIn} />
         <Route exact path="/signup" component={SignUp} />
         <Route component={FourOhFour} />
       </Switch>
