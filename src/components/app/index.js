@@ -8,6 +8,11 @@ import Profile from '../profile'
 import LogIn from '../login'
 import SignUp from '../signup'
 import FourOhFour from '../four-oh-four'
+import Appointment from '../appointment'
+import Client from '../client'
+import ClientList from '../client-list'
+import RequestVisit from '../request-visit'
+import Sitter from '../sitter'
 
 const App = () => (
   <Router>
@@ -20,6 +25,11 @@ const App = () => (
         <Route exact path="/profile" component={Profile} />
         <Route exact path="/login" component={LogIn} />
         <Route exact path="/signup" component={SignUp} />
+        <Route exact path="/appointment" component={Appointment} />
+        <Route exact path="/client" component={Client} />
+        <Route exact path="/clientlist" component={ClientList} />
+        <Route exact path="/requestvisit" component={RequestVisit} />
+        <Route exact path="/sitter" component={Sitter} />
         <Route component={FourOhFour} />
       </Switch>
     </div>
